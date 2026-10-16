@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#121212"
+    android:gravity="center_horizontal">
+
+    <!-- Özel Tasarım Logo ImageView -->
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_said_keyboard_logo"
+        android:contentDescription="Said Keyboard Logosu" />
+
+    <!-- Başlık -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Said Keyboard Ayarları"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Sistem Klavyesi Etkinleştirme Butonu -->
+    <Button
+        android:id="@+id/btn_enable_sys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sistem Klavyesini Etkinleştir"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#333333"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Boyut Seçenekleri -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hızlı Boyut Seçimi"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btn_size_small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Küçük"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#444444"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btn_size_normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Normal"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#444444"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btn_size_large"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Büyük"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#444444" />
+    </LinearLayout>
+
+    <!-- Tema Seçenekleri -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hızlı Tema Seçimi"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/btn_theme_dark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Koyu Tema"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#333333"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btn_theme_blue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mavi Tema"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1A2530" />
+    </LinearLayout>
+
+    <!-- Klavye Yüksekliği Manuel Ayarı -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Klavye Yüksekliği (dp)"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/et_keyboard_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="270"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0D6EFD"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Arka Plan Rengi Manuel Ayarı -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Arka Plan Renk Kodu"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/et_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="#1E1E1E"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0D6EFD"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Kaydet Butonu -->
+    <Button
+        android:id="@+id/btn_save_settings"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Ayarları Kaydet"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:backgroundTint="#0D6EFD" />
+
+</LinearLayout>
